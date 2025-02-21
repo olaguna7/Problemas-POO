@@ -11,17 +11,10 @@ public class Vehiculo {
         this.numLlantas = numLlantas;
     }
 
-    @Override
-    public String toString() {
-        return "Vehiculo{" +
-                "marcaModelo='" + marcaModelo + '\'' +
-                ", precioDia=" + precioDia +
-                ", numLlantas=" + numLlantas +
-                '}';
-    }
-
     public void mostrarCaracteristicas() {
-        System.out.println(toString());
+        System.out.println("Precio por día: " + precioDia);
+        System.out.println("Marca del modelo: " + marcaModelo);
+        System.out.println("Numero de llantas: " + numLlantas);
     }
 
     public void encenderMotor() {
